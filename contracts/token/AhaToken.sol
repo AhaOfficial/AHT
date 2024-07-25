@@ -18,7 +18,7 @@ contract ApproveAndCallFallBack {
  * @dev Aha token is burnable for burners only
  */
 contract AhaToken is ERC20, ERC20Detailed, ERC20Burnable {
-    uint256 public constant INITIAL_SUPPLY = 15 * (10 ** 9);
+    uint256 public constant INITIAL_SUPPLY = 105 * (10 ** 8);
 
     constructor() public ERC20Detailed("Aha Knowledge Token", "AHT", 18) {
         _mint(msg.sender, INITIAL_SUPPLY * (10 ** uint256(decimals())));
